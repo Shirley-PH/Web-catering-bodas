@@ -1,0 +1,356 @@
+html {
+  box-sizing: border-box;
+  font-size: 50.5%; /* Resetea el contenido 1rem = 62.5% = 10px de 16px*/
+}
+
+body {
+  font-family: "lato", sans-serif;
+  line-height: 2;
+  font-size: 1.5rem;
+  margin: 0%;
+}
+header {
+  max-width: 100%;
+}
+*,
+*::after,
+*::after {
+  box-sizing: inherit;
+}
+main {
+  margin: 2rem;
+}
+/*UTILIDADES */
+.font-ideal {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+}
+/* Navegación */
+nav {
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+.inicio {
+  max-width: 100%;
+  clear: both;
+}
+
+.navegacion-header {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  clear: both;
+}
+.logo {
+  float: left;
+  margin: 0%;
+  padding: 0%;
+}
+.informacion {
+  display: block;
+  width: 100%;
+}
+.informacion li {
+  display: inline;
+  float: right;
+}
+
+.informacion ul {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+}
+.informacion li a {
+  display: inline-block;
+  padding: 2rem;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 2.5rem;
+
+  background-color: rgba(151, 148, 148, 0.342);
+  flex-direction: row-reverse;
+}
+.informacion a:hover {
+  color: yellowgreen;
+  background-color: teal;
+  border-radius: 1rem;
+}
+.fondo-principal .inicio {
+  background-image: url("../imagen/fondo-boda.jpg");
+  height: 100vh;
+  min-height: 80rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+}
+.navegacion-header {
+  display: block;
+  height: 20vh;
+  min-height: 10rem;
+  background-color: rgba(168, 137, 168, 0.767);
+  margin: 0%;
+  padding-top: 2.5rem;
+}
+.texto-fondo p {
+  position: absolute;
+  float: left;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  max-width: 60rem;
+  top: 80%;
+  left: 5%;
+  color: antiquewhite;
+  text-align: center;
+  line-height: 2;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+/* Organización del MENU */
+
+.conteneder-menus {
+  display: flex;
+  margin-left: 22rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+.menus {
+  width: calc(35% - 2rem);
+  background-color: whitesmoke;
+  margin: 2rem;
+  background-position: center center;
+}
+.menus img {
+  width: 100%;
+}
+.menus p,
+a {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+.boton-menu {
+  display: block;
+  background-color: rgb(175, 164, 164);
+  padding: 1rem 3rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.boton-menu:hover {
+  background-color: thistle;
+  cursor: pointer;
+}
+
+/* Banner */
+.banner-principal {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imagen/banquete-mesa.jpg");
+  background-size: cover;
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  background-position: center center;
+}
+
+.banner-principal p {
+  font-size: 2.5rem;
+  color: ivory;
+  text-align: center;
+  width: 70%;
+  margin: 5%;
+}
+.boton-reservas {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2.5rem;
+  position: relative;
+  background-color: rgb(199, 52, 52);
+  width: 13%;
+  border-radius: 5%;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+.boton-reservas a {
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+}
+.boton-reservas:hover {
+  background-color: rgb(90, 11, 11);
+}
+/*testimoniales*/
+.testimoniales {
+  display: flex;
+  margin-left: 15rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 2rem;
+  margin-top: 5rem;
+}
+.hijo-textimonial {
+  width: calc(45.2% - 2rem);
+  background-color: whitesmoke;
+  margin: 3rem;
+  background-position: center center;
+  border-radius: 2rem;
+}
+.testimonio-personal p {
+  text-align: center;
+  line-height: 3;
+  font-size: 2rem;
+}
+
+.testimonio-personal .experiencia {
+  font-style: oblique;
+  text-align: left;
+}
+.contenido-video {
+  padding-top: 2%;
+  padding-left: 1%;
+}
+/* footer*/
+.datos-reservados {
+  background-color: rgb(175, 164, 164);
+  position: absolute;
+  width: 100%;
+  margin-top: 5%;
+}
+.contenedor-footer .logo {
+  margin-top: 13rem;
+}
+.contenedor-footer {
+  clear: both;
+}
+.datos-reservados .logo {
+  float: left;
+}
+.texto-fnal {
+  margin-top: 2.5rem;
+  float: right;
+  font-size: 2.3rem;
+}
+.texto-fnal img {
+  width: 80%;
+}
+.cuerpo-final,
+.direccion-footer {
+  width: 20%;
+  margin-left: 5%;
+  position: relative;
+  float: left;
+}
+.texto-footer,
+.texto-titulo {
+  font-size: 2.5rem;
+  white-space: nowrap;
+}
+
+/*EMPLEO*/
+
+.contenido-valores {
+  margin-left: 5%;
+  text-align: center;
+}
+.valores-formulario p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.padre-empleo {
+  position: relative;
+  clear: both;
+}
+.texto-lema p {
+  width: 100%;
+}
+.fotos-trabajadores img {
+  width: 93%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+.contenedor-empleo form {
+  font-size: 2rem;
+}
+/*DIRECCION*/
+.texto-lema {
+  width: 70%;
+  margin-left: 15%;
+}
+.texto-lema p {
+  text-align: center;
+  color: rgba(187, 109, 13, 0.877);
+  clear: both;
+  font-size: 5rem;
+}
+.locales-totales p {
+  margin-left: 5%;
+  font-size: 3.5rem;
+}
+.locales-totales .detalles {
+  font-size: 2.5rem;
+  margin-left: 5%;
+}
+.locales-totales iframe {
+  width: 80%;
+  margin-left: 5%;
+  text-align: center;
+}
+.icono-derecha img {
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.icono-derecha p {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-left: 5%;
+}
+.formulario-contacto {
+  background-color: bisque;
+  padding: 2%;
+}
+.formulario-contacto p {
+  position: relative;
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 0%;
+}
+.formulario-contacto form {
+  margin-left: 25%;
+  width: 45%;
+  font-size: 2rem;
+}
+/* MENU */
+.servicio-catering {
+  clear: both;
+  position: relative;
+}
+.precio-cetering li {
+  font-size: 2rem;
+  text-align: left;
+}
+.foto-catering img {
+  position: relative;
+  width: 90%;
+  border-radius: 2%;
+}
+.precio-cetering .precio {
+  text-decoration: underline;
+  background-color: chartreuse;
+  padding-top: 1rem;
+  display: block;
+}
+.testimoniales,
+.tipos-menus {
+  margin-left: 0%;
+}

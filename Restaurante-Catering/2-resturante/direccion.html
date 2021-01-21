@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css" type="text/css" />
+    <title>Dirección</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navegacion-header">
+                <div class="inicio">
+                    <div class="logo">
+                        <a href="indice.html"><img src="../imagen/logotipo-bodas.png" width="180px" height="100px"  alt="logotipo"></a>
+                    </div>
+                    <div class="informacion">
+                        <ol>
+                            <li>
+                                <a href="indice.html"> indice</a>
+                            
+                            </li>
+                            <li>
+                                <a href="menu.html"> Menu</a>
+                            </li>
+                            <li>
+                                <a href="empleo.html"> Trabajo</a>
+                            </li>
+                            <li>
+                                <a href="direccion.html"> Contacto</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="texto-lema">
+            <p>Si se acerca una fecha importante para ti o para tu empresa, haz que sea memorable</p>
+        </div>
+        <div class="iconos-informacion testimoniales">
+            <div class="icono-derecha hijo-textimonial">
+                <img src="../imagen/icono-telef.png" alt="icono telefono">
+                <p>Puedes llamarnos al: <br/>
+                    123 456 789
+                </p>
+
+            </div>
+            <div class="icono-derecha hijo-textimonial">
+                <img src="../imagen/icon-carta.png" alt="icono carta">
+                <p>Enviar un email a: <br />
+                   <span>info@laurelcatering.com</span> 
+                </p>
+            </div>
+        </div>
+
+        <div class="formulario-contacto font-ideal">
+            <p> Déjanos tus datos para contactar contigo</p>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend> Datos personales</legend>
+            
+                    <label for="name"> Name </label>
+                    <input type="text" name="name" size="50" placeholder="Escribe tu nombre" required>
+                    <br>
+                    <br>
+                    <label for="apellidos"> Apellidos</label>
+                    <input type="text" name="apellidos" size="50" placeholder="Escribe tu apellido" autocomplete="off">
+                    <br>
+                    <br>
+                    <label for="numero"> Telefono</label>
+                    <input type="number" name="numero" maxlength="7">
+                    <br>
+                    <br>
+                    Dirección: <input type="text" name="direccion" size="50" placeholder="Calle..." autocomplete="off" readonly>
+                    <br>
+                    <br>
+                    Código postal: <input type="text" name="codigoP" size="50" placeholder="0000" autocomplete="off" maxlength="5">
+                    <br>
+                    <br>
+                    <label for="name"> Elige tamaño banquete</label>
+            
+                    <label for="sexo">Grande (+100p)</label>
+                    <input type="radio" id="Hombre" name="sexo" value="grande">
+            
+                    <label for="sexo"> Mediano (80-50p)</label>
+                    <input type="radio" id="Mujer" name="sexo" value="mediano">
+                    <br>
+                    
+                    <br>
+                    Email: <input type="email" name="email" size="50" placeholder="example@xxx.com"> <br />
+                    <br>
+                    
+                    Marca una cita:<input type="date" name="fecha">
+                    <br>
+                    <br>
+                    <label for="comida"> Elege tu comida: </label>
+                    <select id="comida" name="comida">
+                        <option value=""> -selectionar- </option>
+                        <option value="1"> Menu peruano </option>
+                        <option value="2"> Menu tailnadés </option>
+                        <option value="3"> Menú japones </option>
+                    </select>
+                    <br>
+                    <br>
+                    
+                    <input type="checkbox" name="Terminos" checked="true">
+                    <label for="Terminos"> Terminos y Condiciones de Servicio </label>
+                    <br>
+                    
+                    <input type="submit" value="Enviar formulario">
+                    
+                    <input type="reset" value="Reser formulario">
+                    
+                </fieldset>
+                
+            </form>
+        </div>
+
+        <div class="locales-totales">
+            <p> Tenemos más de 15 establecimientos en toda la provincia para que puedas elegir la que se adecua a tus sueños</p>
+            <p class="detalles">Nos puedes encontrar en: <br/>
+            C/ Cerezos, 11 <br/>
+            28703 <br />
+            San Sebastián de los Reyes <br />
+            Madrid <br />
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50062.870099430475!2d-0.5225391639142183!3d38.350616509314946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ac07998d852111b!2sPorto%20Felice%20Ristorante%20Italiano!5e0!3m2!1ses!2ses!4v1611160210467!5m2!1ses!2ses"
+                width="800" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <div class="datos-reservados">
+                <div class="contenedor-footer">
+                    <div class="logo">
+                        <img src="../imagen/logotipo-bodas.png" width="220px" height="200px" alt="logotipo">
+                    </div>
+                    <div class="cuerpo-final">
+                        <p class="texto-titulo"><b>Información de interés</b> </p>
+                        <hr>
+                        <p>Horario: Martes - Domingo <br />
+                            12:00 - 23:00 <br />
+                            Excepto: Festivos y Toque de queda
+                        </p>
+                        <hr>
+                        <p>Telefono: 2334 4468
+    
+                        </p>
+                        <hr>
+                        <p>Fax: 123 1456 789</p>
+    
+                        <p>Política de privacidad</p>
+                        <hr>
+                        <p>Política de cookies</p>
+    
+                    </div>
+                    <div class="direccion-footer">
+                        <div class="texto-footer">
+                            <p><b>Encueéntranos fácilmente!!! </b> </p>
+                            <hr>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9545303058594!2d-3.819056885240171!3d40.34335466802384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41894928bf6b6f%3A0xa9fbf93bf611e671!2sLa%20taberna%20paco!5e0!3m2!1ses!2ses!4v1611096035113!5m2!1ses!2ses"
+                             width="300" height="290" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="texto-fnal">
+                        <p>Todos los derechos Rservados 2021 &copy;</p>
+                        <img src="../imagen/icon-medalla.png" alt="icono medalla">
+                    </div>
+    
+                </div>
+            </div>
+    
+        </nav>
+    </footer>
+</body>
+</html>
